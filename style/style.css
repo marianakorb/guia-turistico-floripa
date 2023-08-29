@@ -11,15 +11,16 @@ body, html {
     height: 100vh;
     margin: 0px;
     padding: 0px;
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: #263f73;
+    background-color: var(--azul-escuro);
     display: flex;
     align-items: center;
-    width: 100vw;
-    min-height: 150px;
+    justify-content: center;
+    min-height: 100px;
 
 }
 
@@ -35,7 +36,10 @@ nav {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+   
 }
 
 div.links{
@@ -43,6 +47,7 @@ div.links{
     padding: 15px;
     border-radius: 50%;
     width: 70px;
+    background-color: white;
 }
 
 nav div.links:hover {
@@ -53,24 +58,104 @@ nav div.links:hover {
     margin-top: 5px;
     margin-bottom: 10px;
     text-align: center;
-    font-size: 0.9em;
-    color: var(--azul-escuro);
-    
+}
+.titulos-links a {
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
 }
 
 main {
-    background-color: white;
+     
+    background-color: rgba(100, 99, 99, 0.919);
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+    background-image: url(https://static.ndmais.com.br/2021/09/imagem-destaque-sou-bem-floripa.jpg);
+}
+
+section {
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px #0000006c;
     margin: auto;
     margin-bottom: 30px;
-    border-radius: 10px;
     padding: 20px;
-
+    
     min-width: 263px;
     max-width: 900px;
+    
+}
+
+#h1-principal {
+    font-size: 2em;
+}
+
+h1 {
+    text-align: center;
+    color: var(--laranja);
+}
+h2 {
+    padding-left: 40px;
+    font-size: 1.3em;
+}
+
+.imgs {
+    text-align: center;
+}
+.imgs-conteudo {
+    width: 600px;
+}
+.paragrafos-conteudo {
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#box-dicionario {
+    margin: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px dashed var(--azul-claro);
+    border-radius: 15px;
+}
+
+#box-dicionario h2 {
+    padding-left: 0px;
+}
+
+#box-dicionario p {
+    text-align: justify;
+}
+
+ul li {
+    list-style-type: none;
+    line-height: 1.7em;
+}
+ul {
+    padding: 0px;
 }
 footer {
-    height: 300px;
-    width: 100%;
+    padding: 5px;
     background-color: var(--azul-escuro);
+   
+}
+footer p {
+    text-align: center;
+}
+
+@media screen and (max-width:763px) {
+
+    .imgs-conteudo {
+        width: 400px;
+    }
+
+    .paragrafos-conteudo {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    section {
+        margin-bottom: 0px;
+    }
+
 }
