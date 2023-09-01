@@ -12,7 +12,7 @@ body, html {
     margin: 0px;
     padding: 0px;
     width: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -95,8 +95,11 @@ h1 {
     color: var(--laranja);
 }
 h2 {
-    padding-left: 40px;
     font-size: 1.3em;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .imgs {
@@ -107,14 +110,17 @@ h2 {
 }
 .paragrafos-conteudo {
     text-align: justify;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    margin: auto;
+    width: 600px;
+    line-height: 1.5;
 }
 
 #box-dicionario {
     margin: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     border: 2px dashed var(--azul-claro);
     border-radius: 15px;
 }
@@ -134,6 +140,35 @@ ul li {
 ul {
     padding: 0px;
 }
+
+#ul-comidas {
+    width: 600px;
+    text-align: justify;
+    margin: auto;
+}
+
+#ul-comidas li {
+    margin-top: 10px;
+}
+
+li a {
+    font-weight: bold;
+}
+
+#inicio-link {
+    margin-top: 20px;
+    text-align: right;
+}
+
+#inicio-link a {
+    color: var(--laranja);
+    text-decoration: none;
+    font-weight: bold;
+}
+#inicio-link a:hover {
+    text-decoration: underline;
+}
+
 footer {
     padding: 5px;
     background-color: var(--azul-escuro);
@@ -152,10 +187,22 @@ footer p {
     .paragrafos-conteudo {
         padding-left: 20px;
         padding-right: 20px;
+        width: 400px;
+    }
+
+    h2 {
+        width: 400px;
+    }
+
+    #ul-comidas {
+        width: 400px;
     }
 
     section {
         margin-bottom: 0px;
+    }
+    #box-dicionario {
+        margin: 5px;
     }
 
 }
